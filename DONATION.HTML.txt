@@ -1,0 +1,150 @@
+from IPython.display import HTML
+
+html_page = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fafafa;
+}
+
+/* Hero section */
+.hero {
+    background: url('https://via.placeholder.com/1200x450.png?text=Help+The+Poor') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Main container */
+.page {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    margin-top: -40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+}
+
+/* Section titles */
+.section-title {
+    font-size: 30px;
+    color: #d60000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Image grid */
+.grid {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid img {
+    width: 32%;
+    border-radius: 12px;
+}
+
+/* Donation box */
+.donate-box {
+    background: #fff3f3;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Telebirr number */
+.telebirr {
+    margin-top: 25px;
+    padding: 20px;
+    background: #ffd200;
+    font-size: 26px;
+    font-weight: bold;
+    width: 280px;
+    border-radius: 10px;
+}
+
+/* Donate button */
+.button {
+    display: block;
+    margin-top: 30px;
+    padding: 18px;
+    background: #ff4d4d;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">Help the Poor ❤️</div>
+
+<div class="page">
+
+    <div class="section-title">Why Your Help Matters</div>
+    <p style="font-size:18px;">
+        Many families cannot afford food, clothes, or shelter. Your donation can save a child's life.
+        Even 5 birr can make a huge difference. Together, we can bring hope.
+    </p>
+
+    <!-- Image gallery -->
+    <div class="grid">
+        <img src="https://via.placeholder.com/300x200.png?text=Family+1">
+        <img src="https://via.placeholder.com/300x200.png?text=Family+2">
+        <img src="https://via.placeholder.com/300x200.png?text=Family+3">
+    </div>
+
+    <!-- Donation message -->
+    <div class="donate-box">
+        Your kindness feeds the hungry, clothes the poor, and gives hope to those who have nothing.
+        Your support means everything. ❤️
+    </div>
+
+    <!-- Telebirr number -->
+    <div class="section-title">Donate via Telebirr 📱</div>
+    <div class="telebirr">09XXXXXXXX</div>
+
+    <!-- QR code -->
+    <h3>Scan to Donate:</h3>
+    <img src="https://via.placeholder.com/200x200.png?text=QR+Code"
+         style="width:200px; border-radius:10px;">
+
+    <!-- Button -->
+    <a class="button" href="#">❤️ Donate Now</a>
+
+    <div class="footer">Thank you for caring. May God bless you. 🙏</div>
+
+</div>
+
+</body>
+</html>
+"""
+
+HTML(html_page)
